@@ -799,12 +799,24 @@ footer {
 
     .footer-row {
         flex-direction: row;
-        align-items: flex-end;
+        align-items: center;
     }
 
     .footer-right {
-        align-items: flex-end;
-        text-align: right;
+        align-items: center;
+    }
+}
+
+/* ========================================
+   Custom Layout Overrides
+   ======================================== */
+@media (min-width: 1024px) {
+    .personas-container.wide {
+        max-width: 80rem;
+    }
+
+    .personas-grid.four-col {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
